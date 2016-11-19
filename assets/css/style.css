@@ -1,0 +1,16 @@
+.btn{
+	margin: 0.5rem;
+}
+
+#thatOneButton{
+	clear: both;
+}
+
+form{
+	margin-top: 3rem;
+}
+
+.image{
+	float: left;
+	margin: 0.5rem;
+}
