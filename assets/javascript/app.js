@@ -13,12 +13,13 @@ function createBtn(){
 //once buttons are click it will 
 function change(){
 	var type = $(this).data("name");
-	var html = "http://api.giphy.com/v1/gifs/search?q="+type+"&&api_key=dc6zaTOxFJmzC";  
+	var html = "https://api.giphy.com/v1/gifs/search?q="+type+"&&api_key=dc6zaTOxFJmzC"; 
+	console.log(html); 
 	$.ajax({
 		url: html, method: 'GET'
 	}).done(function(respond){
 		$(".jiphy").empty();
-		//
+		
 		for(var i=0; i<10; i++){
 			var d = $("<div>");
 			var h = $("<h3>");
